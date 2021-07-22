@@ -1,0 +1,61 @@
+// Override default variables before the import
+
+$base-color: #98291e;
+$white: #fff;
+$grey: rgb(133, 128, 128);
+
+.nav-bar-row {
+  width: 100%;
+}
+
+.nav-bar-header {
+  background-color: $base-color;
+
+  a {
+    color: $white;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
+.sub-header .nav-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+  button.active {
+    color: $base-color;
+    border: none;
+    border-bottom: 1px solid $base-color;
+  }
+  button {
+    color: $grey;
+    border: none;
+  }
+}
+.bill-payment-icon .col{
+    color: $base-color;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .bill-payment-icon .col {
+      font-size: 50px;
+    }
+    .bill-payment-icon .col p {
+        font-size: 12px;
+      }
+  }
+  @media only screen and (min-width: 768px) {
+    .bill-payment-icon .col {
+      font-size: 70px;
+    }
+    .bill-payment-icon .col p {
+        font-size: 16px;
+      }
+  }
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
